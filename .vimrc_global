@@ -1,0 +1,19 @@
+set ts=4 sw=4
+"au Filetype cmake set ts=2 sw=2
+set softtabstop=4
+set expandtab " replace tabs with spaces
+set number
+set ruler
+set backspace=indent,start,eol
+filetype indent on
+set wildmenu " visual autocomplete for commands
+set showmatch " highlight matching braces
+set nobackup " no *~ files
+set noundofile " no ..*.un~ files
+set nowritebackup
+set nowrap
+scriptencoding utf-8
+set encoding=utf-8
+set listchars=eol:⏎,tab:⊙∿≻,trail:⎵
+" listchars utf-8: https://codepoints.net/mathematical_operators
+"set isprint=@,1-255

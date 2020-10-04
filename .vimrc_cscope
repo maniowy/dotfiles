@@ -1,0 +1,12 @@
+"cscope add ~/workspace/AOS-repos/cscope.out
+
+" find usages
+"nmap <C-@><C-@> :cscope find s <C-R>=expand("<cword>")<CR><CR>
+" find functions called by pointed function
+"nmap <C-@>d :cscope find d <C-R>=expand("<cword>")<CR><CR>
+" find functions calling pointed function
+"nmap <C-@>c :cscope find c <C-R>=expand("<cword>")<CR><CR>
+" find files #including this file
+"nmap <C-@>i :cscope find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+"find definition (like ctags)
+"nmap <C-@>g :cscope find g <C-R>=expand("<cword>")<CR><CR>

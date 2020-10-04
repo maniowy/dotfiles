@@ -1,0 +1,31 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized' " solarized themes (dark and light mode)
+Plugin 'tpope/vim-fugitive' " GIT manager
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sleuth' " auto adaptation to file's indenting style
+Plugin 'tpope/vim-dispatch' " asynchronous Make
+Plugin 'bling/vim-airline' " nice status bar
+Plugin 'rhysd/vim-clang-format' " ClangFormat
+Plugin 'junegunn/fzf.vim' " fuzzy file finder
+Plugin 'majutsushi/tagbar' " <F8> tagbar
+Plugin 'scrooloose/nerdcommenter' " comment code quickly
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin' " track git file changes inside NERDTree
+Plugin 'airblade/vim-gitgutter' " track git file changes on a sidebar
+Plugin 'gilsondev/searchtasks.vim' " SearchTasks: search for TODO, FIXME, XXX
+Plugin 'troydm/zoomwintab.vim' " ability to undo <c-w> o (only window)
+Plugin 'othree/xml.vim'
+Plugin 'fidian/hexmode'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'} " LSP (clangd)
+"Plugin 'ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
+"Plugin 'regedarek/ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
+
+call vundle#end()
+
+filetype plugin indent on
