@@ -1,6 +1,6 @@
 "set rtp+=~/.fzf
 
-let g:fzf_history_dir = '~/.share/fzf-history'
+let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -17,4 +17,4 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " fzf files
-nmap <C-p> :Files<CR>
+nnoremap <C-p> :Files<CR>

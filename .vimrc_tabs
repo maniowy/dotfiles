@@ -1,6 +1,6 @@
-map <C-Right> :tabn <CR>
-map <C-Left> :tabp <CR>
-map <C-h> :tabp <CR>
-map <C-l> :tabn <CR>
-map <C-j> :tabm -1 <CR>
-map <C-k> :tabm +1 <CR>
+noremap <C-Right> :tabn <CR>
+noremap <C-Left> :tabp <CR>
+noremap <C-h> :tabp <CR>
+noremap <C-l> :tabn <CR>
+noremap <C-j> :tabm -1 <CR>
+noremap <C-k> :tabm +1 <CR>

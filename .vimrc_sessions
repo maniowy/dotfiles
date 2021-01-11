@@ -1,4 +1,4 @@
-map <F2> :mksession! ~/.vim_session<CR>
-map <C-q> :mksession! ~/.vim_session<CR>:qa<CR>
+noremap <F2> :mksession! ~/.vim_session<CR>
+noremap <C-q> :mksession! ~/.vim_session<CR>:qa<CR>
 " lack of <CR> is intentional
-map <F3> :source ~/.vim_session
+noremap <F3> :source ~/.vim_session

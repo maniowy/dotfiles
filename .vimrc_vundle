@@ -12,6 +12,7 @@ Plugin 'tpope/vim-sleuth' " auto adaptation to file's indenting style
 Plugin 'tpope/vim-dispatch' " asynchronous Make
 Plugin 'bling/vim-airline' " nice status bar
 Plugin 'rhysd/vim-clang-format' " ClangFormat
+Plugin 'junegunn/fzf' " fuzzy file finder
 Plugin 'junegunn/fzf.vim' " fuzzy file finder
 Plugin 'majutsushi/tagbar' " <F8> tagbar
 Plugin 'scrooloose/nerdcommenter' " comment code quickly
@@ -23,6 +24,8 @@ Plugin 'troydm/zoomwintab.vim' " ability to undo <c-w> o (only window)
 Plugin 'othree/xml.vim'
 Plugin 'fidian/hexmode'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'} " LSP (clangd)
+Plugin 'dstein64/vim-startuptime'
+Plugin 'mbbill/undotree'
 "Plugin 'ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
 "Plugin 'regedarek/ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
 

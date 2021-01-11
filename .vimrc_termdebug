@@ -1,0 +1,37 @@
+" vertical split
+let g:termdebug_wide = 163
+
+" next
+nnoremap <leader>n :Over<cr>
+" step over = next
+nnoremap <leader>o :Over<cr>
+" step into
+nnoremap <leader>i :Step<cr>
+" step into
+nnoremap <leader>s :Step<cr>
+nnoremap <leader>c :Continue<cr>
+nnoremap <leader>f :Finish<cr>
+" sigint
+nnoremap <leader>q :Stop<cr>
+nnoremap <leader>Q :call TermDebugSendCommand('quit')<cr>
+"evaluate (print) symbol under cursor, by default mapped to K
+nnoremap <leader>p :Evaluate<cr>
+nnoremap <leader>D :call TermDebugSendCommand('detach')<cr>
+" set temporary break point
+nnoremap <leader>t :call TermDebugSendCommand('tb ' . line('.'))<cr>
+" set temporary break point and try to reach that
+nnoremap <leader>tc :call TermDebugSendCommand('tb ' . line('.'))<cr>:Continue<cr>
+" go to
+nmap <leader>g <leader>tc
+":nnoremap <leader>T :call TermDebugSendCommand('tb ' . line('.')) <bar> :Continue<cr>
+nnoremap <leader>U :call TermDebugSendCommand('until')<cr>
+nnoremap <leader>u :call TermDebugSendCommand('up')<cr>
+nnoremap <leader>d :call TermDebugSendCommand('down')<cr>
+
+nnoremap <leader>ib :call TermDebugSendCommand('i b')<cr>
+nnoremap <leader>it :call TermDebugSendCommand('i th')<cr>
+
+nnoremap <leader>B :Break<cr>
+nnoremap <leader>b :call TermDebugSendCommand('break '.expand('<cword>'))<cr>
+
+hi debugPC cterm=reverse,bold gui=reverse,bold

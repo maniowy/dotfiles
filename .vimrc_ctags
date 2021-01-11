@@ -1,4 +1,4 @@
 "set tags=./tags;$HOME/workspace/AOS-repos/tags
 
-"map <C-]> :tjump <C-R><C-W><CR>
-"map <C-\> :tab split<CR>:tjump <C-R><C-W><CR>
+"noremap <C-]> :tjump <C-R><C-W><CR>
+"noremap <C-\> :tab split<CR>:tjump <C-R><C-W><CR>
