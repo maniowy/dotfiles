@@ -26,6 +26,9 @@ Plugin 'fidian/hexmode'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'} " LSP (clangd)
 Plugin 'dstein64/vim-startuptime'
 Plugin 'mbbill/undotree'
+if has('python3') && has ('timers')
+    Plugin 'danth/pathfinder.vim'
+endif
 "Plugin 'ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
 "Plugin 'regedarek/ZoomWin' " ability to undo <c-w> o (only window) [SLOW]
 
