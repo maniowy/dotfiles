@@ -4,6 +4,7 @@ set softtabstop=4
 set expandtab " replace tabs with spaces
 set number
 set ruler
+set hidden " keep hidden buffers. Use :qa! carefully
 set backspace=indent,start,eol
 filetype indent on
 set wildmode=longest,list,full
@@ -15,6 +16,7 @@ set nowritebackup
 set nowrap
 scriptencoding utf-8
 set encoding=utf-8
-set listchars=eol:⏎,tab:⊙∿≻,trail:⎵
+set listchars=eol:⏎,tab:⊙∿≻,trail:⎵ " show with :set list
+set shortmess+=c " do not pass messages to ins-completion-menu
 " listchars utf-8: https://codepoints.net/mathematical_operators
 "set isprint=@,1-255
