@@ -64,10 +64,12 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 " hint: modify updatetime to change the delay (e.g. set updatetime=2000,
 " defaults to 4000 = 4 seconds)
-augroup CocCursorHold
-  autocmd!
-  autocmd CursorHold * silent call CocActionAsync('highlight')
-augroup END
+if exists('g:coc_enabled')
+  augroup CocCursorHold
+    autocmd!
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+  augroup END
+endif
 
 " Symbol renaming.
 nnoremap <leader>rn <Plug>(coc-rename)<cr>
