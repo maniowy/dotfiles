@@ -25,3 +25,7 @@ nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
 vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
 
 nnoremap <leader>h :UndotreeToggle<cr>
+
+if filereadable(expand('~/.dotfiles/.vimrc_custom'))
+    source ~/.dotfiles/.vimrc_custom
+endif
