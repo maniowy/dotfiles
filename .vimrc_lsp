@@ -75,8 +75,8 @@ endif
 nmap <leader>rn <Plug>(coc-rename)<cr>
 
 " Formatting selected code.
-xnoremap <leader>=  <Plug>(coc-format-selected)
-nnoremap <leader>=  <Plug>(coc-format-selected)
+xmap <leader>=  <Plug>(coc-format-selected)
+nmap <leader>=  <Plug>(coc-format-selected)
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
